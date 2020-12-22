@@ -1,0 +1,102 @@
+# https://starship.rs/config/
+
+add_newline = false
+
+[git_status]
+ahead = "[](purple)[$count](white)"
+behind = "[](cyan)[$count](white)"
+conflicted = '[=$count](yellow)'
+deleted = '[✘$count](black)'
+diverged = "[](cyan)[$ahead_count](white)[](purple)[$behind_count](white)"
+modified = '[*$count](red)'
+renamed = "[»$count](purple)"
+staged = "[+$count](green)"
+stashed = "[\\$$count](yellow)"
+style = "bold bright-white"
+untracked = "[?$count](cyan)"
+
+[git_commit]
+only_detached = true
+style = "bold black"
+format = "[$hash]($style) "
+
+[aws]
+# symbol = " "
+
+[battery]
+# full_symbol = ""
+# charging_symbol = ""
+# discharging_symbol = ""
+
+[conda]
+# symbol = " "
+
+[dart]
+# symbol = " "
+
+[directory]
+# read_only = " "
+style = "bold cyan"
+truncation_length = 8
+truncation_symbol = "…/"
+
+[docker]
+# symbol = " "
+
+[elixir]
+# symbol = " "
+
+[elm]
+# symbol = " "
+
+[git_branch]
+style = "bold bright-white"
+
+[golang]
+# symbol = " "
+
+[haskell]
+# symbol = " "
+
+[hg_branch]
+# symbol = " "
+
+[java]
+# symbol = " "
+
+[julia]
+# symbol = " "
+
+[memory_usage]
+# symbol = " "
+
+[nim]
+# symbol = " "
+
+[nix_shell]
+# symbol = " "
+
+[nodejs]
+# symbol = " "
+
+[package]
+# symbol = " "
+disabled = true
+
+[perl]
+# symbol = " "
+
+[php]
+# symbol = " "
+
+[python]
+# symbol = " "
+
+[ruby]
+# symbol = " "
+
+[rust]
+# symbol = " "
+
+[swift]
+# symbol = "ﯣ "

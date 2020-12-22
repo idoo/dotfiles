@@ -1,0 +1,137 @@
+
+# frozen_string_literal: true
+
+# https://github.com/Homebrew/homebrew-bundle
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "buo/cask-upgrade"
+
+# Homebrew
+# https://github.com/Homebrew/brew/
+brew "autojump"
+brew "awscli"
+brew "bat"
+brew "brew-cask-completion"
+brew "diff-so-fancy"
+brew "dive"
+brew "dockutil"
+brew "duti"
+brew "findutils"
+brew "fzf"
+brew "gcc"
+brew "git-extras"
+brew "git-lfs"
+brew "git-standup"
+brew "git"
+brew "gnu-sed"
+brew "gnupg"
+brew "grep"
+brew "htop"
+brew "httpie"
+brew "imagemagick"
+brew "loc" # lines of code
+brew "luarocks"
+brew "mas"
+brew "mc"
+brew "moreutils"
+brew "neofetch"
+brew "neovim"
+brew "openssl"
+brew "ripgrep"
+brew "rsync"
+brew "shellcheck"
+brew "spoof-mac"
+brew "ssh-copy-id"
+brew "sshfs"
+brew "starship"
+brew "terminal-notifier"
+brew "the_silver_searcher"
+brew "tldr"
+brew "tmux"
+brew "trash"
+brew "tree"
+brew "wget --with-iri"
+brew "wget"
+brew "wifi-password"
+brew "yarn"
+brew "youtube-dl"
+brew "zsh-autosuggestions"
+brew "zsh"
+
+# brew "romkatv/powerlevel10k/powerlevel10k"
+# git lfs install --force
+# git lfs install --skip-smudg
+
+
+brew cask "font-hack-nerd-font"
+brew cask "font-fira-code"
+brew cask "font-Hasklig"
+brew cask "font-CamingoCode"
+brew cask "font-powerline-symbols"
+brew cask "font-jetbrains-mono"
+
+
+# homebrew-cask
+# https://github.com/caskroom/homebrew-cask
+cask "1password"
+cask "alfred"
+cask "bitbar"
+cask "chromium"
+cask "cleanmymac"
+cask "dash"
+cask "docker"
+cask "fantastical"
+cask "firefox"
+cask "fliqlo"
+cask "focus"
+cask "fork"
+cask "grammarly"
+cask "imageoptim"
+cask "imazing"
+cask "intellij-idea-ce"
+cask "iterm2"
+cask "nordvpn"
+cask "quitter"
+cask "slack"
+cask "spotify"
+cask "telegram"
+cask "transmission"
+cask "tripmode"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "vlc"
+cask "wireshark"
+cast "tableplus"
+# cask "little-snitch"
+# cask "micro-snitch"
+
+# rubocop:disable Style/NumericLiterals
+mas "iTranslate", id: 884952790
+mas "JSON helper", id: 453114608
+mas "Location helper", id: 488536386
+mas "MindNode", id: 1289197285
+mas "Monosnap", id: 540348655
+mas "MonthlyCal", id: 935250717
+mas "SnippetsLab", id: 1006087419
+mas "Spark", id: 1176895641
+mas "the Unarchiver", id: 425424353
+mas "Things3", id: 904280696
+mas "WiFi Explorer", id: 494803304
+mas "Xcode", id: 497799835
+
+# Safari
+mas "1Blocker", id: 1107421413
+mas "gramarly", id: 1462114288
+mas "octotree", id: 1457450145
+mas "pocket", id: 1477385213
+mas "translator", id: 1518955356
+mas "vim", id: 1480933944
+# rubocop:enable Style/NumericLiterals
+
+cleanup "--prune --force -s"
