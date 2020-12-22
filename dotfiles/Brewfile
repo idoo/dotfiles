@@ -1,7 +1,4 @@
-
 # frozen_string_literal: true
-
-# https://github.com/Homebrew/homebrew-bundle
 
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -12,8 +9,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "buo/cask-upgrade"
 
-# Homebrew
-# https://github.com/Homebrew/brew/
 brew "autojump"
 brew "awscli"
 brew "bat"
@@ -64,21 +59,13 @@ brew "youtube-dl"
 brew "zsh-autosuggestions"
 brew "zsh"
 
-# brew "romkatv/powerlevel10k/powerlevel10k"
-# git lfs install --force
-# git lfs install --skip-smudg
+cask "font-hack-nerd-font"
+cask "font-fira-code"
+cask "font-Hasklig"
+cask "font-CamingoCode"
+cask "font-powerline-symbols"
+cask "font-jetbrains-mono"
 
-
-brew cask "font-hack-nerd-font"
-brew cask "font-fira-code"
-brew cask "font-Hasklig"
-brew cask "font-CamingoCode"
-brew cask "font-powerline-symbols"
-brew cask "font-jetbrains-mono"
-
-
-# homebrew-cask
-# https://github.com/caskroom/homebrew-cask
 cask "1password"
 cask "alfred"
 cask "bitbar"

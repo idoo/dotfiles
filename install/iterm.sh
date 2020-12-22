@@ -17,5 +17,5 @@ defaults write com.googlecode.iterm2.plist SUEnableAutomaticChecks -bool false
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 dotfiles_echo "-> Downloading iterm themes..."
-wget -P "${ITERM_CONFIG}/themes/" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/OneHalfDark.itermcolors -q --show-progress
-wget -P "${ITERM_CONFIG}/themes/" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/OneHalfLight.itermcolors -q --show-progress
+wget -P "${ITERM_CONFIG}/themes/" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/OneHalfDark.itermcolors -q -c --show-progress
+wget -P "${ITERM_CONFIG}/themes/" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/OneHalfLight.itermcolors -q -c --show-progress
