@@ -1,5 +1,6 @@
 dotfiles/ssh
 dotfiles/transmission
+dotfiles/local/share/mc/history
 exercism.json
 settings
 tmp

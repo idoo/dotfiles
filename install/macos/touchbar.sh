@@ -3,7 +3,7 @@
 echo "Setting defaults touchbar...";
 
 # Touchbar (create default behaviour)
-defaults write com.apple.controlstrip FullCustomized -array com.apple.system.group.brightness com.apple.system.mission-control com.apple.system.launchpad com.apple.system.group.keyboard-brightness com.apple.system.group.media com.apple.system.group.volume com.apple.system.do-not-disturb com.apple.system.sleep com.apple.system.input-menu
+defaults write com.apple.controlstrip FullCustomized -array com.apple.system.group.brightness com.apple.system.mission-control com.apple.system.launchpad com.apple.system.group.media com.apple.system.group.volume com.apple.system.do-not-disturb com.apple.system.sleep com.apple.system.input-menu
 # Mini Touchbar is MiniCustomized (not used)
 
 # Disable TouchBar by default and show F-keys on fn press

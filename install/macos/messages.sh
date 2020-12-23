@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 echo "Setting defaults for Messages...";

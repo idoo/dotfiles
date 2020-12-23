@@ -1,6 +1,7 @@
 #!/bin/bash
 
 config_dirs=(
+    "mc"
     "pry"
     "wireshark"
 )
@@ -9,6 +10,12 @@ config_files=(
     "starship.toml"
 )
 
+if [ -z "$XDG_CONFIG_HOME" ]; then
+    if [ ! -d "${HOME}/.config" ]; then
+        mkdir "${HOME}/.config"
+    fi
+    export XDG_CONFIG_HOME="${HOME}/.config"
+fi
 
 for item in "${config_dirs[@]}"; do
     if [ -d "${XDG_CONFIG_HOME}/${item}" ]; then

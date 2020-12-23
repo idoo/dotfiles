@@ -11,3 +11,8 @@ dotfiles_echo "-> Linging dev files..."
 while read -r ext; do
   duti -s com.microsoft.VSCode "$ext" all
 done <"${DOTFILES}/install/duti/dev"
+
+dotfiles_echo "-> Linging svg..."
+while read -r ext; do
+  duti -s com.wolfrosch.Gapplin "$ext" all
+done <"${DOTFILES}/install/duti/svg"

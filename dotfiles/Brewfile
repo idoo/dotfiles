@@ -114,6 +114,7 @@ mas "Xcode", id: 497799835
 
 # Safari
 mas "1Blocker", id: 1107421413
+mas "Gapplin", id: 768053424
 mas "gramarly", id: 1462114288
 mas "octotree", id: 1457450145
 mas "pocket", id: 1477385213

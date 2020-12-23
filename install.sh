@@ -18,21 +18,15 @@ dotfiles_backup() {
 
 # set -e # Terminate script if anything exits with a non-zero value
 
+# Ask for the administrator password upfront
 sudo -v
+
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if [ -z "$DOTFILES" ]; then
     export DOTFILES="${HOME}/Library/Mobile Documents/com~apple~CloudDocs/config"
 fi
-
-if [ -z "$XDG_CONFIG_HOME" ]; then
-    if [ ! -d "${HOME}/.config" ]; then
-        mkdir "${HOME}/.config"
-    fi
-    export XDG_CONFIG_HOME="${HOME}/.config"
-fi
-
 
 # Ensure Yarn is available in PATH for when Neovim runs plugin installation.
 # https://github.com/yarnpkg/website/blob/96485d6901f1545a72f413e8df6a6851dece4d75/install.sh#L81
@@ -63,10 +57,13 @@ source "${DOTFILES}/install/home-files.sh"
 dotfiles_echo "-> Linking config directories..."
 source "${DOTFILES}/install/home-config.sh"
 
+dotfiles_echo "-> Linking local directories..."
+source "${DOTFILES}/install/home-local.sh"
 
 dotfiles_echo "-> Installing brew software..."
 brew bundle install --file=${DOTFILES}/dotfiles/Brewfile
 
+source "${DOTFILES}/install/remove-from-quarantine.sh"
 
 dotfiles_echo "-> Installing asdf..."
 source "${DOTFILES}/install/asdf.sh"
@@ -82,6 +79,10 @@ source "${DOTFILES}/install/open.sh"
 
 dotfiles_echo "-> Configuring iterm..."
 source "${DOTFILES}/install/iterm.sh"
+
+
+dotfiles_echo "-> Configuring mc..."
+source "${DOTFILES}/install/mc.sh"
 
 
 dotfiles_echo "-> Installing adblock..."
