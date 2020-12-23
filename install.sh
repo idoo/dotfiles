@@ -61,7 +61,7 @@ dotfiles_echo "-> Linking local directories..."
 source "${DOTFILES}/install/home-local.sh"
 
 dotfiles_echo "-> Installing brew software..."
-brew bundle install --file=${DOTFILES}/dotfiles/Brewfile
+brew bundle install --file="~/.Brewfile" --cleanup
 
 source "${DOTFILES}/install/remove-from-quarantine.sh"
 
