@@ -8,17 +8,21 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "buo/cask-upgrade"
+tap "tgotwig/feroxbuster"
 
 brew "autojump"
 brew "awscli"
 brew "bat"
 brew "brew-cask-completion"
+brew "coreutils"
 brew "diff-so-fancy"
 brew "dive"
 brew "dockutil"
 brew "duti"
+brew "feroxbuster"
 brew "findutils"
 brew "fzf"
+brew "garmin-express"
 brew "gcc"
 brew "git-extras"
 brew "git-lfs"
@@ -36,10 +40,10 @@ brew "luarocks"
 brew "mas"
 brew "mc"
 brew "mkcert"
-brew "nss"
 brew "moreutils"
 brew "neofetch"
 brew "neovim"
+brew "nss"
 brew "openssl"
 brew "ripgrep"
 brew "rsync"
@@ -112,6 +116,7 @@ mas "the Unarchiver", id: 425424353
 mas "Things3", id: 904280696
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
+mas "Audiobook Binder", id: 497799835
 
 # Safari
 mas "1Blocker", id: 1107421413
