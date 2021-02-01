@@ -21,14 +21,17 @@ git checkout "$(git describe --abbrev=0 --tags)"
 cd $DOTFILES
 
 dotfiles_echo "-> Adding python..."
-asdf plugin add python
+asdf plugin-add python
 dotfiles_echo "-> Adding ruby..."
-asdf plugin add ruby
+asdf plugin-add ruby
 dotfiles_echo "-> Adding NodeJs..."
-asdf plugin add nodejs
+asdf plugin-add nodejs
+dotfiles_echo "-> Adding Java..."
+asdf plugin-add java
 
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 asdf install
+. ~/.asdf/plugins/java/set-java-home.zsh
 
 # sudo ln -s /usr/local/opt/asdf/libexec/ /usr/local/libexec
