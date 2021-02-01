@@ -2,6 +2,11 @@
 
 # osascript -e 'id of app "AppName"'
 
+dotfiles_echo "-> Linging archives files..."
+while read -r ext; do
+  duti -s cx.c3.theunarchiver "$ext" all
+done <"${DOTFILES}/install/duti/archives"
+
 dotfiles_echo "-> Linging media files..."
 while read -r ext; do
   duti -s org.videolan.vlc "$ext" all
