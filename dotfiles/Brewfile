@@ -104,6 +104,8 @@ cask "tableplus"
 # cask "micro-snitch"
 
 # rubocop:disable Style/NumericLiterals
+mas "Audiobook Binder", id: 497799835
+mas "Hand Mirror", id: 1502839586
 mas "iTranslate", id: 884952790
 mas "JSON helper", id: 453114608
 mas "Location helper", id: 488536386
@@ -116,7 +118,6 @@ mas "the Unarchiver", id: 425424353
 mas "Things3", id: 904280696
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
-mas "Audiobook Binder", id: 497799835
 
 # Safari
 mas "1Blocker", id: 1107421413
