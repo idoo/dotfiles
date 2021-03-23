@@ -20,6 +20,7 @@ brew "dive"
 brew "dockutil"
 brew "duti"
 brew "feroxbuster"
+brew "ffuf"
 brew "findutils"
 brew "fzf"
 brew "garmin-express"
@@ -120,7 +121,7 @@ mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 
 # Safari
-mas "1Blocker", id: 1107421413
+mas "1Blocker", id: 1365531024
 mas "Gapplin", id: 768053424
 mas "gramarly", id: 1462114288
 mas "octotree", id: 1457450145
